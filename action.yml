@@ -206,7 +206,7 @@ runs:
       shell: bash
       run: |
         mv ./love-actions-macos-portable/love-apple-dependencies/macOS/Frameworks/ ./love-actions-macos-portable/love/platform/xcode/macosx
-        mv ${{ inputs.love-package }} ./love-actions-macos-portable/love/platform/xcode/game.love
+        cp ${{ inputs.love-package }} ./love-actions-macos-portable/love/platform/xcode/game.love
         mkdir -p ./love-actions-macos-portable/love/platform/xcode/build/Debug
         mkdir -p ./love-actions-macos-portable/love/platform/xcode/build/Release
     - name: Copy extra assets
