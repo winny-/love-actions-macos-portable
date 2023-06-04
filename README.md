@@ -32,7 +32,7 @@ See related actions below:
 ```yaml
 - name: Build macOS packages
   id: build-packages
-  uses: love-action/love-actions-macos-portable@v1
+  uses: love-actions/love-actions-macos-portable@v1
   with:
     app-name: "My Love Game"
     bundle-id: "org.love2d.my-game"
